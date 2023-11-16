@@ -3,7 +3,7 @@ import 'express-async-errors';
 import dotenv from 'dotenv';
 // ROUTERS
 import authRouter from './routes/auth.js';
-import dashboardRouter from './routes/auth.js';
+import dashboardRouter from './routes/dashboard.js';
 // Middlewares
 import notFound from './middlewares/notFound.js';
 import errorHandler from './middlewares/errorHandler.js';

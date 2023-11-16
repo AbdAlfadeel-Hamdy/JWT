@@ -1,8 +1,9 @@
 import { Router } from 'express';
-import { dashboard } from '../controllers/dashboard.js';
+import { getDashboardInfo } from '../controllers/dashboard.js';
+import authenticateUser from '../middlewares/auth.js';
 
 const app = Router();
 
-app.route('/').get(dashboard);
+app.route('/').get(authenticateUser, getDashboardInfo);
 
 export default app;
